@@ -1,6 +1,7 @@
 :root{
     font-size: 62.5%;
     box-sizing: border-box;
+    font-family: open-sans, sans-serif;
 }
 
 body{
@@ -29,6 +30,7 @@ body{
 
 .logo{
     display: inline-flex;
+    position: relative;
     padding: clamp(2vw, 1em, 10vw);
     background-color: oklch(100% 1 360 / 0.09);
     flex: 1;
@@ -39,6 +41,15 @@ body{
     background-position: center;
     background-origin: content-box;
     box-sizing: border-box;
+}
+
+.logo a{
+    text-decoration: none;
+    color:white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: clamp(1.5rem,2.5vw,3rem);
 }
 
 .form-container{
