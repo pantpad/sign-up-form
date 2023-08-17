@@ -54,8 +54,18 @@ body{
 
 .form-container{
     display: flex;
+    flex-direction: column;
     flex: 2;
     background-color: aliceblue;
+   /*padding: clamp(2vw, 3em, 10vw);*/
+}
+
+form{
+    height: 400px;
+}
+
+section.information{
+    background-color: white;
 }
 
 @media (max-width: 500px) {
