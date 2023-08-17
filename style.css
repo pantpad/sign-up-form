@@ -19,16 +19,31 @@ body{
 .image-container{
     display: flex;
     flex: 1;
+    justify-content: center;
+    align-items: center;
     background-color: aqua;
     background-size:cover;
     background-position: center;
     background-image: url(./cologne.jpg) ;
-    
+}
+
+.logo{
+    display: flex;
+    padding: clamp(2vw, 1em, 10vw);
+    background-color: oklch(100% 1 111 / 0.33);
+    flex: 1;
+    height: 300px; 
+    background-image: url(./600px-IEM_Cologne_2023_lightmode.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: content-box;
+    box-sizing: border-box;
 }
 
 .form-container{
     display: flex;
-    flex: 3;
+    flex: 2;
     background-color: aliceblue;
 }
 
