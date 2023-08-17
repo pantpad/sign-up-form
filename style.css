@@ -24,15 +24,15 @@ body{
     background-color: aqua;
     background-size:cover;
     background-position: center;
-    background-image: url(./cologne.jpg) ;
+    background-image: url(./cologne.jpg);
 }
 
 .logo{
-    display: flex;
+    display: inline-flex;
     padding: clamp(2vw, 1em, 10vw);
-    background-color: oklch(100% 1 111 / 0.33);
+    background-color: oklch(100% 1 360 / 0.09);
     flex: 1;
-    height: 300px; 
+    height: 100%;
     background-image: url(./600px-IEM_Cologne_2023_lightmode.png);
     background-size: contain;
     background-repeat: no-repeat;
