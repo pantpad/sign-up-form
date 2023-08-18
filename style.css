@@ -131,6 +131,7 @@ section.information h1{
 
 section input{
     padding: 8px 4px;
+    border: 1px solid #555;
 }
 
 label{
@@ -138,8 +139,7 @@ label{
 }
 
 input:focus-visible{
-    outline: none;
-    border: 1px solid blue;
+    outline: 1px solid blue;
 }
 
 input:required + span::after{
