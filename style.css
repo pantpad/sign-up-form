@@ -79,6 +79,12 @@ h1,h3,p{
     padding: var(--form-padding);
 }
 
+.text-content h1{
+    font-size: clamp(1em, calc(6vw + 1em), 2em);
+    color: oklch(100% 1 360 / 0.9);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
 .text-content h1,.text-content p,.text-content sub{
     margin-top: max(1em,20px);
 }
