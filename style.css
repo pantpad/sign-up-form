@@ -12,8 +12,9 @@ body{
     border:0;
 }
 
-h1,h3,p{
+h1,h3,p,sub{
     margin: 0;
+    color: white;
 }
 
 .container{
@@ -61,7 +62,7 @@ h1,h3,p{
     display: flex;
     flex-direction: column;
     flex: 2;
-    background-color: #ccc;
+    background:linear-gradient(to top,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
    /*padding: clamp(2vw, 3em, 10vw);*/
 }
 
@@ -81,7 +82,7 @@ h1,h3,p{
 
 .text-content h1{
     font-size: clamp(1em, calc(6vw + 1em), 2em);
-    color: oklch(100% 1 360 / 0.9);
+    color: #FFD300;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -96,7 +97,7 @@ h1,h3,p{
 
 .registered-user a{
     text-decoration: none;
-    color: oklch(100% 1 360);
+    color: #FFD300;
     bottom: 0;
     right: 0;
 }
@@ -124,7 +125,8 @@ section li{
 }
 
 section.information h1{
-   color: oklch(100% 1 360);
+   color: #FFD300;
+   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 section input{
