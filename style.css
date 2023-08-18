@@ -4,6 +4,10 @@
     font-family: open-sans, sans-serif;
     --form-padding: 1.5em;
     --visibility: hidden;
+    --valid-color: green;
+    --focus-color: orange;
+    --invalid-color: red;
+    --base-color: #555;
 }
 
 body{
@@ -129,18 +133,35 @@ section.information h1{
    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-section input{
-    padding: 8px 4px;
-    border: 1px solid #555;
-}
-
 label{
     position: relative;
 }
 
-input:focus-visible{
-    outline: 1px solid blue;
+section input{
+    padding: 8px 4px;
+    border: 2px solid var(--color,#555);
+    outline: none;
 }
+
+input::placeholder{
+    color:transparent;
+}
+
+li:has(:invalid){
+    --color: var(--invalid-color);
+}
+
+li:has(:focus){
+    --color: var(--focus-color);
+}
+
+li:has(:valid){
+    --color: var(--valid-color);
+}
+
+li:has(:placeholder-shown) {
+    --color: var(--base-color);
+  }
 
 input:required + span::after{
     position: absolute;
