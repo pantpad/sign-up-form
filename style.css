@@ -3,7 +3,7 @@
     box-sizing: border-box;
     font-family: open-sans, sans-serif;
     --form-padding: 1.5em;
-    --random: blue;
+    --visibility: hidden;
 }
 
 body{
@@ -111,6 +111,7 @@ section ul{
 section li{
     display: flex;
     flex-direction: column;
+    position: relative;
     margin-top: 1em;
     margin-right: max(5vw, 2em);
     width: min(50vw,400px);
@@ -124,9 +125,21 @@ section input{
     padding: 8px 4px;
 }
 
+label{
+    position: relative;
+}
+
 input:focus-visible{
     outline: none;
     border: 1px solid blue;
+}
+
+input:required + span::after{
+    position: absolute;
+    content: "*";
+    color: red;
+    top:0;
+    right: 0;
 }
 
 section.button{
