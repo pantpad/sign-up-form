@@ -1,6 +1,5 @@
 :root{
     font-size: 62.5%;
-    box-sizing: border-box;
     font-family: open-sans, sans-serif;
     --form-padding: 1.5em;
     --visibility: hidden;
@@ -10,7 +9,14 @@
     --base-color: #555;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body{
+    display: flex;
+    flex: 1 1 auto;
+    min-height: 100vh;
     padding:0;
     margin:0;
     border:0;
@@ -23,7 +29,7 @@ h1,h3,p,sub{
 
 .container{
     display: flex;
-    min-height: 100vh;
+    flex: 1;
 }
 
 .image-container{
@@ -80,7 +86,6 @@ h1,h3,p,sub{
 
 .text-content{
     justify-content: flex-end;
-    margin-top: 10px;
     padding: var(--form-padding);
 }
 
@@ -169,6 +174,12 @@ input:required + span::after{
     color: red;
     top:0;
     right: 0;
+}
+
+li:has(:focus:invalid)::after{
+    position: absolute;
+    content: "to fill";
+    bottom: -25px;
 }
 
 section.button{

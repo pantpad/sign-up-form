@@ -41,7 +41,7 @@
                         </li>
                         <li>
                             <label for="password">Password</label>
-                            <input type="password" name="user_password" id="password" placeholder="Enter valid password" required minlength="8" 
+                            <input type="text" name="user_password" id="password" placeholder="Enter valid password" required minlength="8" 
                             pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
                             <span>UpperCase, LowerCase, Number or SpecialChar and min 8 Chars</span>
                         </li>
@@ -59,7 +59,9 @@
                         </li>
                         <li>
                             <label for="password_confirm">Confirm Password</label>
-                            <input type="password" name="" id="password_confirm" required placeholder="Enter same password" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                            <input type="text" name="" id="password_confirm" required placeholder="Enter same password" pattern=""
+                            oninvalid="setCustomValidity('Password not set or not matching')"
+                            >
                             <span></span>
                         </li>
                     </ul>
