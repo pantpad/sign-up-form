@@ -16,5 +16,5 @@ password.addEventListener("input",(e) => {
 });
 
 function formatRegex(input){
-    return input.replaceAll("$", "\\$");
+    return input.replaceAll("$", "\\$").replaceAll("^","\\^");
 }
