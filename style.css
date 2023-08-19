@@ -87,6 +87,7 @@ h1,h3,p,sub{
 .text-content{
     justify-content: flex-end;
     padding: var(--form-padding);
+    max-width: 100ch;
 }
 
 .text-content h1{
