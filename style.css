@@ -298,4 +298,3 @@ li:has(:placeholder-shown) {
         font-size: clamp(1rem, 2vw - 1rem, 1.5rem);
     }
 }
-
