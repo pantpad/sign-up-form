@@ -1,6 +1,6 @@
 console.log("wela");
 let     pswSet = false; 
-const   confirmPassword = document.getElementById("password_confirm");
+const   confirmPassword = document.getElementById("pswConfirm");
 const   password = document.getElementById("password");
 
 password.addEventListener("input",(e) => { 
