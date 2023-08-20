@@ -168,7 +168,21 @@ li{
     flex:1;
     /* border: 1px solid cyan; */
     --rule-visibility: none;
+    --criteria-visibility: none;
     width: 300px;
+    position: relative;
+}
+
+li span{
+    display: block;
+}
+
+li span::after{
+    position: absolute;
+    content:"*";
+    left: 78%;
+    top:0;
+    color:red;
 }
 
 label{
@@ -197,10 +211,22 @@ li:has(:invalid){
 
 li:has(:focus){
     --color: var(--focus-color);
+    --criteria-visibility: block;
+}
+
+li:has(:invalid:not(:focus):not(:placeholder-shown)){
+    --rule-visibility: block;
 }
 
 li:has(:valid){
     --color: var(--valid-color);
+}
+
+li:has(:valid:not(:focus):not(:placeholder-shown)) span::after{
+    content: ":^D";
+    color: var(--valid-color);
+    font-size:10px;
+    margin-top:1px;
 }
 
 li:has(:placeholder-shown) {
@@ -210,6 +236,15 @@ li:has(:placeholder-shown) {
 .warning{
     display: var(--rule-visibility);
     font-size:10px;
+    color: var(--invalid-color);
+    position: relative;
+}
+
+.criteria{
+    display: var(--criteria-visibility);
+    font-size:10px;
+    font-weight: 500;
+    color: orangered;
 }
 
 @media (max-width: 920px) {
