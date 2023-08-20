@@ -247,6 +247,18 @@ li:has(:placeholder-shown) {
     color: orangered;
 }
 
+.criteria p{
+    margin-top: 5px;
+}
+
+.criteria meter{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    top:0;
+    right: 30%;
+}
+
 @media (max-width: 920px) {
     .flex-container{
         flex-wrap: wrap;
