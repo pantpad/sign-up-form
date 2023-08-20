@@ -10,77 +10,76 @@
 </head>
 
 <body>
-    <div class="container">
-        <section class="image-container">
-            <div class="logo">
-                <a href="https://twitter.com/brcho_">Photo by @brcho_</a>
+    <div class="logo-container">
+        <div class="logo">
+            <img src="./odin-lined.png" alt="">
+            <h1>ODIN</h1>
+        </div>
+        <span>Photo By <a href="">Halie West</a> on <a href="">Unsplash</a></span>
+    </div>
+    <div class="form-container">
+        <div class="first">
+            <div class="text-container">
+                <h4>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</h4>
+                <h4>Sign up <em>now</em> to get started</h4>
+                <h3>you know you want to.</h3>
             </div>
-        </section>
-        <section class="form-container">
-            <div class="text-content">
-                <h1>Ready to visit the cathedral?</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius assumenda dolores asperiores!
-                    Culpa
-                    nulla cupiditate tempore. Libero, at inventore?
-                </p>
-                <sub>you know what to do</sub>
+        </div>
+        <div class="second">
+            <h1>Let's do this!</h1>
+            <div class="flex-container">
+                <ul>
+                    <li>
+                        <label for="firstname">FIRST NAME</label>
+                        <input type="text" name="userFirstName" id="firstname">
+                        <div class="warning">
+                            <p>#1 NAME RULE</p>
+                            <p>#2 NAME RULE</p>
+                            <p>#3 NAME RULE</p>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="userEmail" id="email">
+                        <div class="warning">
+                            <p>#1 EMAIL RULE</p>
+                            <p>#2 EMAIL RULE</p>
+                            <p>#3 EMAIL RULE</p>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="password">PASSWORD</label>
+                        <input type="text" name="userPassword" id="password">
+                        <div class="warning">
+                            <p>#1 PASSWORD RULE</p>
+                            <p>#2 PASSWORD RULE</p>
+                            <p>#3 PASSWORD RULE</p>
+                            <p>#3 PASSWORD RULE</p>
+                            <p>#3 PASSWORD RULE</p>
+                            <meter></meter>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label for="lastname">LAST NAME</label>
+                        <input type="text" name="userLastName" id="lastname">
+                    </li>
+                    <li>
+                        <label for="tel">PHONE NUMBER</label>
+                        <input type="tel" name="userPhone" id="tel">
+                    </li>
+                    <li>
+                        <label for="pswConfirm">CONFIRM PASSWORD</label>
+                        <input type="text" name="" id="pswConfirm">
+                    </li>
+                </ul>
             </div>
-            <form action="./index.html" method="get">
-                <section class="information">
-                    <h1>Sign Up</h1>
-                    <ul style="display: inline-block;">
-                        <li>
-                            <label for="firstname">First Name</label>
-                            <input type="text" name="user_firstName" id="firstname" minlength="2" maxlength="16" required placeholder="Enter valid name">
-                            <span></span>
-                        </li>
-                        <li>
-                            <label for="email">Email</label>
-                            <input type="email" name="user_mail" id="email" required placeholder="Enter valid email address">
-                            <span></span>
-                        </li>
-                        <li>
-                            <label for="password">Password</label>
-                            <input type="text" name="user_password" id="password" placeholder="Enter valid password" required minlength="8" 
-                            pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
-                            <span>UpperCase, LowerCase, Number or SpecialChar and min 8 Chars</span>
-                        </li>
-                    </ul>
-                    <ul style="display: inline-block;">
-                        <li>
-                            <label for="lastname">Last Name</label>
-                            <input type="text" name="user_lastName" id="lastname" minlength="2" maxlength="16" required placeholder="Enter valid last name">
-                            <span></span>
-                        </li>
-                        <li>
-                            <label for="phone">Phone Number </label>
-                            <input type="tel" name="user_phone" id="phone" required placeholder="Enter valid phone number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" >
-                            <span></span>
-                        </li>
-                        <li>
-                            <label for="password_confirm">Confirm Password</label>
-                            <input type="text" name="" id="password_confirm" required placeholder="Enter same password" pattern=""
-                            oninvalid="setCustomValidity('Password not set or not matching')"
-                            >
-                            <span></span>
-                        </li>
-                    </ul>
-                    <div class="disclaimer">
-                        <small class="legal">
-                            By signing up, you are agreeing to our
-                            <a href="#">Terms &amp; Conditions</a> and <a href="#">Privacy Policy</a>
-                         </small>
-                    </div>
-                </section>
-                <section class="button">
-                    <button type="submit">Create Account</button>
-                </section>
-            </form>
-            <div class="registered-user">
-                <h3>Already have an account? <a href="">LOG IN</a></h3>
-            </div>
-
-        </section>
+        </div>
+        <div class="third">
+            <button type="button">Create Account</button>
+            <p>Already have an account? <a href="">Login</a></p>
+        </div>
     </div>
 </body>
 
