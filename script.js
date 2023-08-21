@@ -5,10 +5,10 @@ const   password = document.getElementById("password");
 const   criteriaContainer = document.querySelectorAll('.criteria p');
 
 const   criteriaList = [
-    /\d/,        //8 chars
-    /.{8,}/,        //1 uppercase letter
-    /[A-Z]/,           //1 digit
-    /[^a-zA-Z\d]/   //1 special character
+    /\d/,           //1 digit
+    /.{8,}/,        //8 chars
+    /[A-Z]/,        //1 maiusc
+    /[^a-zA-Z\d]/,  //1 special char
 ]
 
 password.addEventListener("input",(e) => { 
@@ -19,14 +19,18 @@ password.addEventListener("input",(e) => {
             console.log("password valida: " + e.target.value);
             confirmPassword.pattern = formatRegex(e.target.value);
             console.log(formatRegex(e.target.value));
-        }else{
-            criteriaList.forEach((criteria,index) => {
-                if(criteria.test(e.target.value)){
-                    criteriaContainer[index].style.color = "green";
-                }
-            });
         }
     }
+});
+
+password.addEventListener('keyup',(e) => {
+    criteriaList.forEach((criteria,index) => {
+        if(criteria.test(e.target.value)){
+            criteriaContainer[index].style.color = "green";
+        }else{
+            criteriaContainer[index].style.color = "red";
+        }
+    });
 });
 
 function formatRegex(input){
