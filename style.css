@@ -20,6 +20,8 @@
     --focus-color: orange;
     --invalid-color: red;
     --base-color: hsl(0 0% 45%);;
+    --check-icon: "\f00c";
+    --unchecked-icon: ;
 }
 
 *{
@@ -245,16 +247,15 @@ li:has(:placeholder-shown) {
     font-size:10px;
     font-weight: 500;
     color: red;
-    margin-left: 20px;
 }
 
-.criteria ul li::marker{
-    content: "ciao";
+.criteria i{
+    margin-right: 5px;
 }
 
 .criteria p{
+    display: inline-block;
     margin-top: 5px;
-    margin-left: 5px;
 }
 
 .criteria meter{
