@@ -244,11 +244,17 @@ li:has(:placeholder-shown) {
     display: var(--criteria-visibility);
     font-size:10px;
     font-weight: 500;
-    color: orangered;
+    color: red;
+    margin-left: 20px;
+}
+
+.criteria ul li::marker{
+    content: "ciao";
 }
 
 .criteria p{
     margin-top: 5px;
+    margin-left: 5px;
 }
 
 .criteria meter{
